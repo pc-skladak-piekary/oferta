@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PC Składak Piekary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <!-- HERO -->
+    <header>
+        <div class="hero">
+            <img class="logo" src="logo2.png" alt="logo">
+            <h1><span id="typed-text" data-text="PC SKŁADAK PIEKARY"></span></h1>
+            <p>Składam wymarzone PC • Korepetycje C++/HTML • Strony internetowe na zamówienie</p>
+            <a href="#kontakt" class="btn">Napisz po wycenę</a>
+            <a href="#portfolio" class="btn">Zobacz moje prace</a>
+        </div>
+    </header>
+
+    <!-- USŁUGI -->
+    <section id="uslugi" class="jobs">
+        <h2>Co robię</h2>
+        <div class="services">
+            <div class="card">
+                <i class='bx bx-desktop'></i>
+                <h3>Składanie PC</h3>
+                <p>Gamingowe, biurowe, do pracy – od taniego do high-endowego PC. Składam komputer u siebie lub u ciebie w domu, to Ty wybierasz!*</p>
+            </div>
+            <div class="card">
+                <i class='bx  bx-code'></i> 
+                <h3>Korepetycje Online</h3>
+                <p>C++, HTML/CSS/JS, algorytmika – od zera do poziomu maturalnego/olimpiady.</p>
+            </div>
+            <div class="card">
+                <i class='bx bx-world'></i>
+                <h3>Strony internetowe</h3>
+                <p>Wizytówki, sklepy, landing page – nowoczesne i szybkie.</p>
+            </div>
+            <div class="card">
+                <i class='bx bx-wrench'></i>
+                <h3>Serwis i upgrade</h3>
+                <p>Czyszczenie, nowa pasta, więcej RAM-u, SSD – ożywiam stare maszyny.</p>
+            </div>
+        </div>
+        <br>
+        <small>*W przypadku dojazdu na terenie Piekar Śląskich - dojazd gratis.</small>
+    </section>
+
+    <!-- PORTFOLIO / KARUZELA -->
+    <section id="portfolio" style="background:#111;padding:100px 10%;">
+        <h2>Ostatni build</h2>
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide"><img src="2ade2245-412f-41b7-9903-a910df6898eb.jpg" alt="Photo 1"/></div>
+                <div class="slide"><img src="30f32c7f-f70b-43c4-9d77-1ae7e7853d09.jpg" alt="Photo 2"/></div>
+                <div class="slide"><img src="385fb70f-b1dc-40cc-a694-0f05860c86d7.jpg" alt="Photo 3"/></div>
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </section>
+
+    <!-- CENNIK -->
+    <section id="cennik">
+        <h2>Cennik orientacyjny</h2>
+        <div class="price-table">
+            <div class="price-card">
+                <h3>Składanie PC</h3>
+                <p class="price">od 250 zł</p>
+                <p>Wycena części + moja usługa + testy</p>
+            </div>
+            <div class="price-card">
+                <h3>Korepetycje</h3>
+                <p class="price">50 zł/h</p>
+                <p>Online na platformie discord</p>
+            </div>
+            <div class="price-card">
+                <h3>Strona internetowa</h3>
+                <p class="price">od 400 zł</p>
+                <p>Responsywna</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPINIE -->
+    <section id="opinie" style="background:#111;">
+        <h2>Co mówią klienci</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>„Komputer działa jak marzenie, 240 FPS w CS2 na max ustawieniach. Polecam!”</p>
+                <strong>— Sebastian, Piekary Śląskie</strong>
+            </div>
+            <div class="testimonial">
+                <p>„Świetny specjalista od komputerów, szybki rzetelny. Zna się na swojej pracy”</p>
+                <strong>— Natalia, Piekary Śląskie</strong>
+            </div>
+            <div class="testimonial">
+                <p>"Problem z routerem, który ciągnął się 2 miesiące rozwiązał w 5 minut. Polecam!"</p>
+                <strong>- Marlena, Pieary Śląskie</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt">
+        <h2>Skontaktuj się ze mną</h2>
+        <div>
+            <p>Adres e-mail: <b>pc.skladak.piekary@gmail.com</b></p>
+            <p>Numer telefonu: <b>+48 533 387 329</b></p>
+        </div>
+        <div style="text-align:center;margin-top:40px;">
+            <p>Instagram: <a href="https://www.instagram.com/pc.skladak.piekary?igsh=bmZkejR6ZmQ3dTF1&utm_source=qr" style="color:var(--accent);">@pc_skladak_piekary</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 PC Składak Piekary – Wszystkie prawa zastrzeżone</p>
+        <div class="socials">
+            
+        </div>
+    </footer>
+
+    <script>
+        // Prosta karuzela
+        let slideIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        document.querySelector('.next').addEventListener('click', () => {
+            slideIndex = (slideIndex + 1) % totalSlides;
+            slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+        });
+        document.querySelector('.prev').addEventListener('click', () => {
+            slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+        });
+
+        const typedTextSpan = document.getElementById('typed-text');
+        const textToType = typedTextSpan.dataset.text; // Pobieramy tekst z atrybutu data-text
+        let charIndex = 0;
+        const typingSpeed = 120; // Szybkość pisania (ms na literę)
+
+        function type() {
+            if (charIndex < textToType.length) {
+                typedTextSpan.textContent += textToType.charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingSpeed);
+            };
+        };
+
+        // Rozpocznij animację po załadowaniu strony
+        window.onload = function() {
+            type();
+        };
+    </script>
+</body>
+</html>
